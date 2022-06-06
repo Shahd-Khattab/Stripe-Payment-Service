@@ -42,10 +42,11 @@ export default function PaymentForm(){
        try {
            const {id}= paymentMethod
            const response= await axios.post("http://localhost:5000/payment", 
-           
+           //ghayrt el amount
            {
-               amount:100, //mafroud ageebo mn el total price fa ezzai?
+               amount:amount, //mafroud ageebo mn el total price fa ezzai?
                id 
+            
            })
            //console.log(response);
            if(response.status==200){
