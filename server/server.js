@@ -23,7 +23,7 @@ app.post('/payment', async (req,res)=>{
         //     payment_method: id,
         //     confirm: true
         // })
-        console.log("test");
+        //console.log("test");
         const payment = await stripe.charges.create({
             amount: amount,
             currency: 'usd',

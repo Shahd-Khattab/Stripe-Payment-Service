@@ -71,6 +71,8 @@ export default function PaymentForm(){
                 <div className='FormRow'>
                     <CardElement options={CARD_OPTIONS}/>
                 </div>
+                <label>Email</label>
+                 <input type="email" name="user_email" />
                 </fieldset> 
                 <button>Pay</button>
         </form>  
